@@ -13,9 +13,6 @@
     in
     {
       formatter.${system} = pkgs.nixfmt-rfc-style;
-      packages.${system} = {
-        default = self.packages.${system}.myNeovim;
-        myNeovim = import ./myNeovim.nix pkgs;
-      };
+      packages.${system}.default = import ./myNeovim.nix pkgs;
     };
 }
