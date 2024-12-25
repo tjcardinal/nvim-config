@@ -37,6 +37,7 @@ pkgs.writeShellApplication {
     clippy
     lua-language-server
     nixfmt-rfc-style
+    ripgrep
     rust-analyzer
     stylua
   ];
